@@ -5,9 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "2572": "TIMING=1 npx eslint ./issue-2572-namespace-export",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "TIMING=1 npx eslint ./debug"
+    "debug": "npx eslint ./debug"
   },
   "keywords": [],
   "author": "",
