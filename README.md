@@ -2,7 +2,7 @@ This repo is created to replicate [issue #2585](https://github.com/import-js/esl
 
 On my end, everything works properly, no unnceessary errors are flagged for importing from `victory`.
 
-Below is the message after I run eslint command.
+Below is the message I got after running `eslint`
 
 ```
 > sandbox-new@1.0.0 debug
