@@ -8,6 +8,7 @@
         "eslint:recommended",
         // "plugin:@typescript-eslint/recommended",
         "plugin:import/recommended"
+        // "plugin:import/typescript"
     ],
     "overrides": [],
     // "parser": "@typescript-eslint/parser",
@@ -16,37 +17,40 @@
         "sourceType": "module"
     },
     "plugins": [
-        // "@typescript-eslint",
+        "@typescript-eslint",
         "import"
     ],
     "settings": {
         "import/extensions": [
             ".js",
             ".jsx"
+            // ".ts"
         ]
     },
     "rules": {
-        // "import/no-restricted-paths": [
-        //     2,
-        //     {
-        //         "zones": [
-        //             {
-        //                 "target": "./debug",
-        //                 "from": "./src"
-        //             }
-        //         ]
-        //     }
-        // ],
-        "import/no-deprecated": "off",
-        "import/namespace": "error",
-        // "import/no-unused-modules": [
-        //     2,
-        //     {
-        //         "unusedExports": true
-        //     }
-        // ],
-        "import/no-named-as-default": "error",
-        "import/named": "off",
-        "import/no-cycle":"error"
+        "import/no-restricted-paths": [ // does NOT use ExportMap
+            2,
+            {
+                "zones": [
+                    {
+                        "target": "./debug",
+                        "from": "./src"
+                    }
+                ]
+            }
+        ],
+        "import/no-named-as-default": "off", //uses ExportMap
+        "import/named": "error", // uses ExportMap
+        "import/namespace": "off", // uses ExportMap
+        "import/no-deprecated": "off", // uses ExportMap
+        "import/no-unused-modules": [ // uses ExportMap
+            "off",
+            {
+                "unusedExports": true
+            }
+        ],
+        "import/no-duplicates": "off", // does NOT use ExportMap
+        "import/no-cycle":"off", // uses ExportMap
+        "import/no-named-as-default-member":"off" // uses ExportMap
     }
 }
