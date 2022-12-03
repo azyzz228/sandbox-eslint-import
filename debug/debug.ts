@@ -1,1 +1,0 @@
-import { bar, type foo } from './foo'

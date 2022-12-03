@@ -1,23 +1,22 @@
 {
-  "name": "sandbox-new",
+  "name": "sandbox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "debug": "TIMING=1 npx eslint ./debug"
+    "eslint": "npx eslint ./src",
+    "ts": "npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.41.0",
-    "@typescript-eslint/parser": "^5.41.0",
-    "eslint": "^8.26.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.26.0"
-  },
   "dependencies": {
-    "react": "^18.2.0"
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.29.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "4.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0"
   }
 }
